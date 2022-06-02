@@ -302,7 +302,7 @@
               correctAnswerCount = correctAnswerCount;
             }
           } );
-          totalScore = ( correctAnswerCount / questionCount ) * 100;
+          totalScore = ( correctAnswerCount / questionCount ) * 100%;
         }
         _checkAnswers();
         /* build quiz results
@@ -311,23 +311,23 @@
 
         //quiz score rank
         resultsHTML += '<h1 class="' + class_quizScoreRank + '">';
-        if ( totalScore == 100 ) {
+        if ( totalScore == 100% ) {
           //top rank
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.a;
-        } else if ( totalScore > 80 ) {
-          //rank 1: 80-100
+        } else if ( totalScore > 80% ) {
+          //rank 1: 80%-100%
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.g;
-        } else if ( totalScore > 60 ) {
-          //rank 2: 60-79
+        } else if ( totalScore > 60% ) {
+          //rank 2: 60%-79%
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.b;
-        } else if ( totalScore > 40 ) {
-          //rank 3: 40-59
+        } else if ( totalScore > 40% ) {
+          //rank 3: 40%-59%
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.c;
-        } else if ( totalScore > 20 ) {
-          //rank 4: 20-39
+        } else if ( totalScore > 20% ) {
+          //rank 4: 20%-39%
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.d;
         } else {
-          //rank 5: 0-19
+          //rank 5: 0-19%
           resultsHTML += totalScore+" - "+plugin.config.quizScoreRank_text.f;
         }
         resultsHTML += '</h1>';
